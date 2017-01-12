@@ -3,7 +3,7 @@ package examplefuncsplayer;
 import battlecode.common.*;
 
 import java.util.Random;
-//Omar is gonna start
+
 final class RobotPlayer {
 
     /**turns, the robot dies!
@@ -40,6 +40,7 @@ final class RobotPlayer {
                     // Check if this ARCHON's core is ready
                     if (fate % 10 == 2) {
                         // Send a message signal containing the data (6370, 6147)
+                    	//First I will change the broadcast range
                         rc.broadcastMessageSignal(6370, 6147, 80);
                     }
                     Signal[] signals = rc.emptySignalQueue();
@@ -49,7 +50,7 @@ final class RobotPlayer {
                     } else {
                         rc.setIndicatorString(0, "I don't any signal buddies");
                     }
-                    if (rc.isCoreReady()) .{
+                    if (rc.isCoreReady()){
                         if (fate < 800) {
                             // Choose a random direction to try to move in
                             Direction dirToMove = directions[fate % 8];
