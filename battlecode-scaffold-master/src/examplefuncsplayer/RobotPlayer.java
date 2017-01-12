@@ -47,7 +47,7 @@ final class RobotPlayer {
                     } else {
                         rc.setIndicatorString(0, "I don't any signal buddies");
                     }
-                    if (rc.isCoreReady()) {
+                    if (rc.isCoreReady()) .{
                         if (fate < 800) {
                             // Choose a random direction to try to move in
                             Direction dirToMove = directions[fate % 8];
