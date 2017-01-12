@@ -3,7 +3,7 @@ package examplefuncsplayer;
 import battlecode.common.*;
 
 import java.util.Random;
-
+//Omar is gonna start
 final class RobotPlayer {
 
     /**turns, the robot dies!
@@ -28,6 +28,8 @@ final class RobotPlayer {
                 // Caught exceptions will result in a bytecode penalty.
                 System.out.println(e.getMessage());
                 e.printStackTrace();
+                
+              
             }
 
             while (true) {
@@ -68,6 +70,7 @@ final class RobotPlayer {
                                 // Choose a random direction to try to build in
                                 Direction dirToBuild = directions[rand.nextInt(8)];
                                 for (int i = 0; i < 8; i++) {
+ 
                                     // If possible, build in this direction
                                     if (rc.canBuild(dirToBuild, typeToBuild)) {
                                         rc.build(dirToBuild, typeToBuild);
