@@ -1,0 +1,13 @@
+[core]
+	symlinks = false
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	logallrefupdates = false
+[branch "mybranch"]
+    remote = origin
+    merge = refs/heads/mybranch
+	
+[remote "origin"]
+	url = https://github.com/Omar-Aboelsoud/Battlecode.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
