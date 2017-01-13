@@ -10,6 +10,7 @@ final class RobotPlayer {
      **/
     @SuppressWarnings("unused")
     public static void run(RobotController rc) {
+     
         // You can instantiate variables here.
         Direction[] directions = {Direction.NORTH, Direction.NORTH_EAST, Direction.EAST, Direction.SOUTH_EAST,
                 Direction.SOUTH, Direction.SOUTH_WEST, Direction.WEST, Direction.NORTH_WEST};
@@ -65,7 +66,7 @@ final class RobotPlayer {
                             }
                         } else {
                             // Choose a random unit to build
-                            RobotType typeToBuild = robotTypes[fate % 8];
+                            RobotType typeToBu	ild = robotTypes[fate % 8];
                             // Check for sufficient parts
                             if (rc.hasBuildRequirements(typeToBuild)) {
                                 // Choose a random direction to try to build in
@@ -79,6 +80,10 @@ final class RobotPlayer {
                                     } else {
                                         // Rotate the direction to try
                                         dirToBuild = dirToBuild.rotateLeft();
+                                    }
+                                    public boolean dangers (){
+                                    	
+                                    	return false;
                                     }
                                 }
                             }
